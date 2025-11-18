@@ -1,0 +1,21 @@
+.container1{
+    height: 600px;
+    width: 100%;
+    background-color: pink;
+}
+
+.home{
+    background-color: red;
+
+}
+
+.aboutUs{
+    background-color: blue;
+    color: white;
+
+}
+
+.contactUs{
+    background-color: gray;
+    color: white;
+}
