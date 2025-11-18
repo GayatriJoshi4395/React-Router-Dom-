@@ -1,0 +1,72 @@
+/* MAIN LAYOUT */
+.mainContent {
+  display: flex;
+  height: 100vh;
+  background-color: #f8f9fa; /* bootstrap light */
+}
+
+/* SIDEBAR */
+.leftDiv {
+  width: 250px;
+  background: #212529; /* bootstrap dark */
+  color: #fff;
+  padding: 20px;
+  border-right: 1px solid #343a40;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.15);
+}
+
+/* Links inside sidebar */
+.leftDiv a {
+  display: block;
+  padding: 12px 18px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+/* Hover effect */
+.leftDiv a:hover {
+  background-color: #0d6efd; /* bootstrap primary */
+  color: #fff;
+  transform: translateX(4px);
+}
+
+/* ACTIVE LINK style by default react-router adds active style property */
+.leftDiv a.active {
+  background-color: #0d6efd;
+  font-weight: 600;
+}
+
+/* PAGE SECTION */
+.rightDiv {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
+}
+
+/* Page content card styling */
+.rightDiv h1,
+.rightDiv h2,
+.rightDiv h3 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #212529;
+}
+
+/* Paragraph styling */
+.rightDiv p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Card view look for content wrapper */
+.rightDiv > div {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
